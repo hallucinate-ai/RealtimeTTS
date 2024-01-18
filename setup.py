@@ -11,7 +11,7 @@ with open('requirements.txt') as f:
 ## detect if os is debian or ubuntu
 if os.path.exists("/etc/debian_version") or os.path.exists("/etc/lsb-release"):
     ## install with apt install python3-pyaudio
-    os.system("sudo apt install libportaudio2 python3-pyaudio")
+    os.system("sudo apt install libportaudio2 python3-pyaudio espeak")
     #http://http.us.debian.org/debian/pool/main/p/python-pyaudio/python3-pyaudio_0.2.13-1+b2_amd64.deb
     ## curl and install pyaudio from url
     os.system("curl -O http://http.us.debian.org/debian/pool/main/p/python-pyaudio/python3-pyaudio_0.2.13-1+b2_amd64.deb")
